@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jackdaw.market.MainActivity" >
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_action_send_now"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="@string/confirm_add"/>
+
+</menu>

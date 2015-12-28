@@ -1,6 +1,7 @@
 package com.example.yueme;
 
 
+import cn.bmob.v3.Bmob;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -68,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true); 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+    
+
     
     private void setSpinner() {
     	
@@ -152,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
 		setToolbar();
 		setSpinner();
 		setDrawerLayout();
+		Bmob.initialize(this, "f94e9f252af3504c549b0e96cd286fc8");
 	}
 
 	@Override
@@ -167,6 +171,11 @@ public class MainActivity extends AppCompatActivity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
+		if (id == R.id.action_add) {
+			AddNewActivity.actionStart(MainActivity.this);
+		}else if(id == R.id.action_message){
+			MessageActivity.actionStart(MainActivity.this);
+		}
 //		if (id == R.id.action_event) {
 //		}else if(id == R.id.action_search) {
 //		}
