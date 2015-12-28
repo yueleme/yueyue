@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YueMe</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_login">点我登录喔，亲~</string>
+    <string name="close">关闭</string>
+    <string name="open">打开</string>
+
+    <string-array name="category">
+        <item>活动类型</item>
+        <item>约饭</item>
+        <item>约电影</item>
+        <item>约球</item>
+    </string-array>
+    
+    <string-array name="time">
+        <item>时间</item>
+        <item>早上</item>
+        <item>下午</item>
+        <item>晚上</item>
+    </string-array>
+
+</resources>

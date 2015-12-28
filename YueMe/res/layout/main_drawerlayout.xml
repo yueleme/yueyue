@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 主布局 -->
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+	  <include layout="@layout/main_toolbar" />
+	  
+	  <LinearLayout 
+	      android:layout_width="match_parent"
+		  android:layout_height="50dp"
+	      android:orientation="horizontal">
+	      
+	      <Spinner
+                android:id="@+id/sp_category"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/sp_time"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+                       
+	      
+	  </LinearLayout>
+	  
+	  <ListView 
+	      android:id="@+id/lv_show"
+	      android:layout_width="match_parent"
+	      android:layout_height="match_parent">
+	      
+	  </ListView>
+	  
+    </LinearLayout>
+    
+   
+    
+    <!-- 侧滑菜单 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#CCFFFF"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/imgbtn_face"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                 />
+
+            <LinearLayout
+                android:id="@+id/layout_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/imgbtn_face"
+                android:layout_toRightOf="@id/imgbtn_face"
+                android:orientation="vertical"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_no_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_login" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_left_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

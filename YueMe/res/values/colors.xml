@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Indigo_colorPrimaryDark">#44B276</color>
+    <color name="Indigo_colorPrimary">#CCFFFF</color>
+    <color name="Indigo_nav_color">#6AC694</color>
+    <color name="GridView_background_color">#C0C0C0</color>
+    <color name="announcement_background_color">#A8D08C</color>
+</resources>
